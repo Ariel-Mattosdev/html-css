@@ -19,7 +19,8 @@
             font-size: 1.5em;
             font-weight: bolder;
             padding: 10px;
-            background-color: rgba(103, 191, 221, 0.39);
+            background-color: rgba(0, 0, 0, 0.788);
+            color: white;
         }
 
         td, th {
@@ -27,12 +28,20 @@
             border: 1px solid black;
         }
 
+        tbody tr:nth-child(odd) {
+            background-color: lightgray;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: white;
+        }
+
         td.numero {
             text-align: right;
         }
 
         thead, tfoot {
-            background-color: rgb(99, 188, 218);
+            background-color: rgba(0, 0, 0, 0.781);
             color: white;
         }
     </style>
