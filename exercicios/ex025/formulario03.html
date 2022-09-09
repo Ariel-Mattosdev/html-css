@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários Númericos</title>
+    <style>
+        p {
+            font-size: 1.7em;
+        }
+
+        input {
+            font-size: 0.7em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulário utilizando numéros e datas</h1>
+    <form action="formulario.js" method="post">
+        <p>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" required maxlength="26" size="19" placeholder="Digite seu nome completo" autocomplete="name">
+        </p>
+        <p>
+            <label for="email">Email do aluno:</label>
+            <input type="email" name="email" id="email" required>
+        </p>
+        <p>
+            <label for="prova-dia">Dia da prova:</label>
+            <input type="date" name="prova-dia" id="prova-dia" value="2022-09-09" required>
+        </p>
+        <p>
+            <label for="hora">Hora da prova:</label>
+            <input type="time" name="hora" id="hora" required>
+        </p>
+        <p>
+            <label for="media">Media:</label>
+            <input type="number" name="media" id="media" min="0" max="10" placeholder="0 a 10" step="0.1" required>
+        </p>
+        <p>
+            <label for="mes">Periodo letivo:</label>
+            <input type="month" name="mes" id="mes" required>
+        </p>
+    
+        <p>
+            <input type="submit" value="Enviar dados">
+            <input type="reset" value="LImpar dados" >
+        </p>
+    </form>
+</body>
+</html>
