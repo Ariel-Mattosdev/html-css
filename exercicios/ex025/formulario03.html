@@ -13,19 +13,31 @@
         input {
             font-size: 0.7em;
         }
+
+        legend {
+            font-size: 1.5em;
+        }
+
     </style>
 </head>
 <body>
     <h1>Prova de Biologia</h1>
     <form action="formulario.js" method="post">
-        <p>
-            <label for="nome">Nome:</label>
-            <input type="text" name="nome" id="nome" required maxlength="26" size="19" placeholder="Digite seu nome completo" autocomplete="name">
-        </p>
-        <p>
-            <label for="email">Email do aluno:</label>
-            <input type="email" name="email" id="email" required>
-        </p>
+        <fieldset>
+            <legend>DADOS PESSOAIS</legend>
+            <p>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" required maxlength="26" size="19" placeholder="Digite seu nome completo" autocomplete="name">
+            </p>
+            <p>
+                <label for="email">Email do aluno:</label>
+                <input type="email" name="email" id="email" required autocomplete="email" minlength="5" maxlength="20">
+            </p>
+            <p>
+                <label for="telefone">Telefone do aluno:</label>
+                <input type="tel" name="telefone" id="telefone" required placeholder="(xx)xxxx-xxxx">
+            </p>
+        </fieldset>
         <p>
             <label for="prova-dia">Dia da prova:</label>
             <input type="date" name="prova-dia" id="prova-dia" value="2022-09-09" required>
