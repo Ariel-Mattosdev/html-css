@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        p {
+            font-size: 1.7em;
+        }
+
+        input {
+            font-size: 0.7em;
+        }
+
+        legend {
+            font-size: 1.5em;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Checkbox e Radio</h1>
+    <form action="form.js" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="masc"> <label for="masc">Masculino</label>
+            <input type="radio" name="sexo" id="fem"> <label for="fem">Feminino</label>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="fut" id="fut" checked> <label for="fut">Futebol</label> <br>
+            <input type="checkbox" name="volei" id="volei" checked> <label for="volei">Volêi</label> <br>
+            <input type="checkbox" name="tennis" id="tennis" checked> <label for="tennis">Tennis</label> <br>
+            <input type="checkbox" name="natacao" id="natacao" checked> <label for="natacao">Natação</label>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
