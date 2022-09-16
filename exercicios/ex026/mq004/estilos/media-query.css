@@ -3,9 +3,24 @@
 /*Todas as outras midias*/
 
 @media print {
+    main {
+        border: 2px solid black;
+    }
+
+    main::after {
+        content: 'Essa impressão ficou bem bostinha ó';
+    }
+    
     h1 {
         font-family: 'Courier New', Courier, monospace;
+        text-shadow: none;
+        color: black;
     }    
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#print {display: block;}
+    img#pc {display: none;}
+    img#tv {display: none;}
 }
 
 @media screen and (min-width: 768px) and (max-width:992px) { /*Telas de Tablet*/
@@ -13,7 +28,7 @@
         background: url(../imagens/back-tablet.jpg);
         background-size: cover;
         background-position: center center;
-        }
+    }
     img#phone {display: none;}
     img#tablet {display: block;}
     img#print {display: none;}
